@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-shopping-cart/static/css/main.d9d815bd.css",
+    "main.js": "/react-shopping-cart/static/js/main.99e99a53.js",
+    "static/media/zombie_running.jpg": "/react-shopping-cart/static/media/zombie_running.f7ecb03d82e0d9602ed8.jpg",
+    "static/media/first aid.jpg": "/react-shopping-cart/static/media/first aid.016a602ba1e477451cbb.jpg",
+    "static/media/bottles.jpg": "/react-shopping-cart/static/media/bottles.38abf21058ba9b6bcf07.jpg",
+    "static/media/armor.jpg": "/react-shopping-cart/static/media/armor.6570a1f71c07da14eba6.jpg",
+    "static/media/boots.jpg": "/react-shopping-cart/static/media/boots.8b544fabd78883ef90a0.jpg",
+    "static/media/knifes.jpg": "/react-shopping-cart/static/media/knifes.f7200ecbd17e3e791e9e.jpg",
+    "static/media/backpack.jpg": "/react-shopping-cart/static/media/backpack.2f7d2917fc02fc65b588.jpg",
+    "static/media/gas mask.jpg": "/react-shopping-cart/static/media/gas mask.59c525476b368b5d5953.jpg",
+    "index.html": "/react-shopping-cart/index.html",
+    "main.d9d815bd.css.map": "/react-shopping-cart/static/css/main.d9d815bd.css.map",
+    "main.99e99a53.js.map": "/react-shopping-cart/static/js/main.99e99a53.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9d815bd.css",
+    "static/js/main.99e99a53.js"
+  ]
+}
