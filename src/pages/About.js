@@ -9,7 +9,7 @@ export function About() {
         </a>
       </p>
 
-      <p>You can see the code on <a href="githublinkhere">my GitHub.</a></p>
+      <p>You can see the code on <a href="https://github.com/flaviovisnardifilho/react-shopping-cart">my GitHub.</a></p>
 
       <p>All images are AI generated, from <a href="https://www.bluewillow.ai/">BlueWillow.</a></p>
 
