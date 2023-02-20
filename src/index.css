@@ -1,5 +1,6 @@
 body,
-html, #root {
+html,
+#root {
     font-family: 'Roboto Condensed', sans-serif;
     /* font-family: 'Bungee Spice', cursive; */
     background: no-repeat url(./assets/zombie_running.jpg);
@@ -58,7 +59,7 @@ li>a:hover {
 }
 
 .home-page>h2 {
-    /* color: var(--textColor); */
+    color: var(--textColor);
     /* background-color: var(--textBackColor); */
     font-size: 1.5rem;
     width: 50%;
@@ -117,7 +118,7 @@ li>a:hover {
 }
 
 .card {
-    background-color: rgba(192, 199, 99, 0.384);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
     border: 4px black solid;
     padding: 1rem;
@@ -145,7 +146,7 @@ li>a:hover {
 .amount-price {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .card-content>.title {
@@ -154,9 +155,9 @@ li>a:hover {
 }
 
 /* PRODUCT */
-.products {
+.product {
     padding: 2rem;
-    background-color: #fdf9be;
+    background-color: rgba(255, 255, 255, 0.5);
     font-size: 1.5rem;
 }
 
@@ -170,7 +171,7 @@ li>a:hover {
     gap: 2rem;
 }
 
-.product-content>.product-text{
+.product-content>.product-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -181,7 +182,7 @@ li>a:hover {
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
-    
+
     padding: 2rem;
 }
 
@@ -200,13 +201,55 @@ li>a:hover {
     box-shadow: 4px -4px 12px -4px orangered;
 }
 
+/* SHOPPING CART */
+.product-cart {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+}
+
+.left-card {
+    max-width: 100px;
+}
+
+.right-card {
+    width: 100%;
+    padding: 2rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.buttons-amount {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.input-amount {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.amount-price {
+    align-items: center;
+}
+
+
 /* ABOUT */
-.about{
+.about {
     padding: 4rem;
-    background-color: #fdf9be;
+    background-color: rgba(255, 255, 255, 0.5);
 
 }
-.about > p {
+
+.about>p {
     font-size: 1.5rem;
     /* color: white; */
     font-weight: bolder;
@@ -214,8 +257,8 @@ li>a:hover {
 
 }
 
-.email-to{
+.email-to {
     font-size: 3rem;
-    background-color: #fdf9be;
+    background-color: rgba(255, 255, 255, 0.5);
 
 }
