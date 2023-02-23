@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <div className="about">
+    <div className="about" data-testid='about-content'>
 
       <p>
         The goal of this project was built a shopping cart using react, react-router-dom and the react testing library. It's an assigment from {' '}

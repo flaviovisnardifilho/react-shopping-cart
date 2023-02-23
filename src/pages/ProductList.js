@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { ProductCard } from '../components/ProductCard';
-// import { products } from '../data';
 
 export function ProductList({ products }) {
   const descriptionStyle = {
@@ -12,11 +11,16 @@ export function ProductList({ products }) {
     <div className="products-container">
       {products.map((product) => {
         return (
-          <div className='product-card' key={product.id}>
+          <div
+            className="product-card"
+            
+            key={product.id}
+          >
             <Link
               to={`${product.id}`}
               preventScrollReset={true}
               style={descriptionStyle}
+              data-testid={`product-link-${product.id}`}
             >
               <ProductCard
                 id={product.id}

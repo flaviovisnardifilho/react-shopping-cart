@@ -2,8 +2,6 @@ import React from 'react';
 import { AiFillMinusCircle, AiFillPlusCircle } from 'react-icons/ai';
 
 export function ShoppingCart({ cartItems, addToCart }) {
-  // console.log(cartItems);
-
   let cartItemsAmount = cartItems.reduce((acc, val) => {
     return acc + val.amount;
   }, 0);
@@ -17,7 +15,11 @@ export function ShoppingCart({ cartItems, addToCart }) {
     <div className="products">
       {cartItems.map((product) => {
         return (
-          <div className="product-cart" key={product.id}>
+          <div
+            className="product-cart"
+            data-testid={`product-cart-${product.id}`}
+            key={product.id}
+          >
             <div className="left-card">
               <h2>{product.productName}</h2>
               <img
@@ -28,12 +30,14 @@ export function ShoppingCart({ cartItems, addToCart }) {
               />
             </div>
             <div className="right-card">
-              <p className="amount-price">
+              <div className="amount-price">
                 <div className="buttons-amount">
-                  <AiFillMinusCircle
-                    className="minus-plus-item"
-                    onClick={() => addToCart(product.id, -1)}
-                  />
+                  <button className="minus-button">
+                    <AiFillMinusCircle
+                      className="minus-plus-item"
+                      onClick={() => addToCart(product.id, -1)}
+                    />
+                  </button>
                   <input
                     className="input-amount"
                     value={product.amount}
@@ -44,16 +48,18 @@ export function ShoppingCart({ cartItems, addToCart }) {
                       )
                     }
                   />
-                  <AiFillPlusCircle
-                    className="minus-plus-item"
-                    onClick={() => addToCart(product.id)}
-                  />
+                  <button className="plus-button">
+                    <AiFillPlusCircle
+                      className="minus-plus-item"
+                      onClick={() => addToCart(product.id)}
+                    />
+                  </button>
                 </div>
                 {/* <span className="amount">Items: {product.amount}</span> */}
                 <span className="price">
                   $ {(product.price * product.amount).toFixed(2)}
                 </span>
-              </p>
+              </div>
             </div>
           </div>
         );

@@ -18,10 +18,11 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
 
   function addToCart(id, amount = 1) {
-    if (!productAvaiable(id) && amount > 0) {
-      // console.log('not avaiable');
-      return;
-    }
+    const productAvaiable =
+      productList.filter((prod) => prod.id === id)[0].avaiable > 0
+        ? true
+        : false;
+    if (!productAvaiable && amount > 0) return;
 
     const productAlreadyOnCart = cartItems.find((prod) => prod.id === id);
 
@@ -49,11 +50,6 @@ function App() {
 
     setCartItems(nextCart);
     setProductList(nextProductList);
-  }
-
-  function productAvaiable(id) {
-    const prod = productList.filter((prod) => prod.id === id);
-    return prod[0].avaiable > 0 ? true : false;
   }
 
   const cartAmount = cartItems.reduce((prev, acc) => {
